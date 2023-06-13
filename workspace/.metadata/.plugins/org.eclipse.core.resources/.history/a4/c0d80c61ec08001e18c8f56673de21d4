@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>infoForm.html </title>
+</head>
+<body>
+
+본인들 정보 파일 이름, 연락처, 주소 입력 받아서 
+information.java servlet 처리하기  
+
+</body>
+</html>

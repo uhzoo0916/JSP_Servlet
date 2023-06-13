@@ -1,0 +1,7 @@
+package com.kosa.date;
+
+import javax.servlet.http.HttpServlet;
+
+public class Servelet extends HttpServlet {
+
+}

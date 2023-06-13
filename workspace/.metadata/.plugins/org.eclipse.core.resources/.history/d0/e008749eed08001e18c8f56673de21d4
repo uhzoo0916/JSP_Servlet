@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>infoForm.html </title>
+</head>
+<body>
+
+<h1>INFORMATION</h1> 
+<table>
+	<form action="../info" method="post" name = "frm">
+		<tr>
+			<td>User name</td>
+			<td><input type="text" name="name" placeholder="name input"></td>		
+		</tr>
+		<tr>
+			<td>User tel</td>
+			<td><input type="tel" name="tel" placeholder="tel input"></td>		
+		</tr>	
+
+		<tr>
+			<td>User address</td>
+			<td><input type="address" name="address" placeholder="address input"></td>		
+		</tr>	
+			
+		<tr>
+			<td>
+			<input type="submit" value="Submit" onclick="sendData()">
+			<input type="reset" value="Reset">				
+			</td>
+		</tr>				
+	</form>
+</table>
+
+</body>
+</html>

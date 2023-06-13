@@ -1,0 +1,36 @@
+/** info.js
+ * 
+ */
+ 
+ function sendData(){	
+	let f = document.frm;
+	
+	if(f.name.value ===""){	
+		window.alert("이름은 필수 사항 입니다.")
+		f.name.focus();
+		return false;
+	}
+	
+	if(f.name.value.length<1 || f.name.value.length>5){	
+		window.alert("제대로된 이름입력 ")
+		f.name.focus();
+		return false;
+	}
+	if(f.tel.value ===""){	
+		window.alert("연락처는 필수 사항 입니다.")
+		f.tel.focus();
+		return false;
+	}
+	
+	if(f.pwd.value.length<4 || f.pwd.value.length>8){	
+		window.alert("pwd는 4자 이상 8자 이하로 넣어주세요")
+		f.pwd.focus();
+		return false;
+	}
+	
+	if(f.address.value ===""){	
+		window.alert("주소를 입력하세요.")
+		f.address.focus();
+		return false;
+	}
+}

@@ -1,0 +1,14 @@
+/**main.js* */
+
+/** 아이디 박스를 onclick =alert""**/
+
+const input = document.querySelector('input[type=text]');
+const msg = document.querySelectio('.message');
+
+input.addEventListener('id', function(){	
+	if(input.value.length<0){	
+		msg.innerHTML='이름을 입력하세요'
+	}else{	
+		msg.innerHTML='';
+	}
+});

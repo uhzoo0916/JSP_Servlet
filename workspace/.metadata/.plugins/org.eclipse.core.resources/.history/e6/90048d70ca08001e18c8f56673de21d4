@@ -1,0 +1,54 @@
+package com.kosa.date;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.util.Calendar;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+public class ServletDate extends HttpServlet {
+
+	protected void process(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
+		
+		System.out.println("Hello Servlet!!");
+		
+		//한글깨짐 
+		response.setCharacterEncoding("euc-kr");
+		
+		Calendar c = Calendar.getInstance();//
+		int hour = c.get(Calendar.HOUR_OF_DAY);
+		int minute = c.get(Calendar.MINUTE);
+		int second = c.get(Calendar.SECOND); //여기 까진 자바
+		
+		//웹 페이지에 출력
+		PrintWriter out = response.getWriter();// 추상 메소드 
+		out.write("<html><head><title> 서버측 시간을 얻어서 씁니다</title></head>");
+		out.write("<body><h1>교수컴 hello Servlet </h1>");
+		out.write("<h1>현재 시간은 ");
+		out.write(Integer.toString(hour) + "시"); //int 타입을 tostring 을 통해 문자형으로 바꿈 
+		out.write(Integer.toString(minute) + "분");
+		out.write(Integer.toString(second) + "초");
+		
+		out.write("</h2></body></html>");
+		out.close();
+	}
+
+	@Override
+	protected void doGet(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		process(request, response);
+	}
+
+	@Override
+	protected void doPost(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		process(request, response);
+	}
+
+}

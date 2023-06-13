@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>infoForm.html </title>
+</head>
+<body>
+
+본인들 정보 파일 이름, 연락처, 주소 입력 받아서 
+information.java servlet 처리하기  
+
+	<form action="../info" method="post" name = "frm">
+		<tr>
+			<td>User ID</td>
+			<td><input type="text" name="id" placeholder="id input"></td>		
+		</tr>
+
+		<tr>
+			<td>User PWD</td>
+			<td><input type="password" name="pwd" placeholder="password input"></td>		
+		</tr>	
+			
+		<tr>
+			<td>
+			<input type="submit" value="Submit" onclick="sendData()">
+			<input type="reset" value="Reset">				
+			</td>
+		</tr>				
+	</form>
+
+</body>
+</html>

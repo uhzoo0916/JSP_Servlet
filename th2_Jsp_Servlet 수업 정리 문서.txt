@@ -1,0 +1,32 @@
+>> day52- 23/06/12
+ 
+>jsp/servlet 웹을 진행할 떄는 반드시 있어야 하는 폴더들이 있다.
+WebCotent/WEB_INF/lib
+		/classes
+		/tag
+		/web.xml  <-- 설정파일(annotation 기반 권장)
+
+
+> Servlet				 vs JSP 
+JAVA + html(JAVA 안에 html)	   	  HTML + java (HTML 안에 java)
+대규모, 유지보수가 필요 			  소규모, 빠른 개발 필요 
+					  
+
+
+ src 폴더 --> java 코드, servlet
+ WebContent --> html, css, js, jsp,,.. 
+
+jsp --> Servlet
+jsp --> jsp
+jsp --> html . . 등 데이터 보낼수 있음 
+
+<생성 방법>
+1) class 기반 
+2) servlet
+
+
+>servlet page 는 등록
+1) 설정 파일로 등록 - web.xml 파일에 등록
+2) annotation (자동으로 설정됨)
+
+태그와 쿼리문은 전부 문자열로 취급 
